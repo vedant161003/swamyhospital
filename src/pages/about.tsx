@@ -1,19 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Heart, Target, Sparkles } from "lucide-react";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About Us — Swamy Hospitals" },
-      { name: "description", content: "Swamy Hospitals is a trusted nursing home, clinic, and medical center in Electronic City, Bangalore." },
-      { property: "og:title", content: "About Swamy Hospitals" },
-      { property: "og:description", content: "Trusted medical care in Electronic City, Bangalore." },
-    ],
-  }),
-  component: AboutPage,
-});
-
-function AboutPage() {
+export default function AboutPage() {
   return (
     <>
       <section className="bg-secondary/40 py-16">
@@ -42,9 +29,21 @@ function AboutPage() {
       <section className="bg-secondary/40 py-16">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-3">
           {[
-            { icon: Target, title: "Our Mission", desc: "To deliver accessible, high-quality medical care that improves the well-being of every patient we serve." },
-            { icon: Heart, title: "Our Values", desc: "Compassion, integrity, and excellence guide every interaction and every treatment." },
-            { icon: Sparkles, title: "Our Promise", desc: "A patient-first approach with experienced doctors, modern facilities, and trusted care." },
+            {
+              icon: Target,
+              title: "Our Mission",
+              desc: "To deliver accessible, high-quality medical care that improves the well-being of every patient we serve.",
+            },
+            {
+              icon: Heart,
+              title: "Our Values",
+              desc: "Compassion, integrity, and excellence guide every interaction and every treatment.",
+            },
+            {
+              icon: Sparkles,
+              title: "Our Promise",
+              desc: "A patient-first approach with experienced doctors, modern facilities, and trusted care.",
+            },
           ].map((m) => (
             <div key={m.title} className="rounded-xl border border-border bg-card p-6">
               <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">

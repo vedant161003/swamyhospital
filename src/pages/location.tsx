@@ -1,20 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { HOSPITAL_INFO } from "@/config/integrations";
 
-export const Route = createFileRoute("/location")({
-  head: () => ({
-    meta: [
-      { title: "Location — Swamy Hospitals, Electronic City Bangalore" },
-      { name: "description", content: "Find Swamy Hospitals in Electronic City, Bangalore. Address, map, and contact details." },
-      { property: "og:title", content: "Visit Swamy Hospitals" },
-      { property: "og:description", content: "Located in Electronic City, Bangalore." },
-    ],
-  }),
-  component: LocationPage,
-});
-
-function LocationPage() {
+export default function LocationPage() {
   return (
     <>
       <section className="bg-secondary/40 py-16">

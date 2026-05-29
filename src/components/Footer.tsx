@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { HOSPITAL_INFO } from "@/config/integrations";
 import logo from "@/assets/swamy-logo.png";

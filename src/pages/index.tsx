@@ -1,23 +1,31 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { Award, Stethoscope, Users, ShieldCheck, Sparkles, Baby, Activity, ArrowRight, HeartPulse, Scan, FlaskConical, ClipboardCheck, BedDouble, Scissors, Stethoscope as StethIcon, Pill, Check } from "lucide-react";
+import { Link } from "react-router-dom";
+import {
+  Award,
+  Stethoscope,
+  Users,
+  ShieldCheck,
+  Sparkles,
+  Baby,
+  Activity,
+  ArrowRight,
+  HeartPulse,
+  Scan,
+  FlaskConical,
+  ClipboardCheck,
+  BedDouble,
+  Scissors,
+  Stethoscope as StethIcon,
+  Pill,
+  Check,
+} from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { useBooking } from "@/components/BookingProvider";
 import heroImage from "@/assets/hero-hospital.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Swamy Hospitals — Best Hospital in Electronic City, Bangalore" },
-      { name: "description", content: "Trusted nursing home, clinic, and medical services in Electronic City, Bangalore. Experienced doctors. Book your slot online." },
-      { property: "og:title", content: "Swamy Hospitals — Your Health, Our Priority" },
-      { property: "og:description", content: "Trusted nursing home, clinic, and medical services in Electronic City, Bangalore." },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function Home() {
   const { open } = useBooking();
+
   return (
     <>
       {/* HERO */}

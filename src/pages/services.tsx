@@ -1,42 +1,44 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Sparkles, Activity, Baby, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useBooking } from "@/components/BookingProvider";
-
-export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Services — Swamy Hospitals" },
-      { name: "description", content: "Skin Care, General Medicine, and OBG services at Swamy Hospitals, Electronic City, Bangalore." },
-      { property: "og:title", content: "Our Services — Swamy Hospitals" },
-      { property: "og:description", content: "Dermatology, General Medicine, and OBG care at Swamy Hospitals." },
-    ],
-  }),
-  component: ServicesPage,
-});
 
 const services = [
   {
     icon: Sparkles,
     title: "Skin Care / Dermatology / Cosmetology",
     desc: "Comprehensive dermatology and cosmetology services — from acne and pigmentation treatment to advanced aesthetic procedures.",
-    points: ["Acne & pigmentation care", "Anti-ageing treatments", "Hair & scalp care", "Cosmetic dermatology"],
+    points: [
+      "Acne & pigmentation care",
+      "Anti-ageing treatments",
+      "Hair & scalp care",
+      "Cosmetic dermatology",
+    ],
   },
   {
     icon: Activity,
     title: "General Medicine",
     desc: "Expert diagnosis and treatment for a wide range of medical conditions, with a focus on preventive and ongoing care.",
-    points: ["Routine check-ups", "Chronic disease management", "Fever & infections", "Lifestyle counselling"],
+    points: [
+      "Routine check-ups",
+      "Chronic disease management",
+      "Fever & infections",
+      "Lifestyle counselling",
+    ],
   },
   {
     icon: Baby,
     title: "OBG (Obstetrics & Gynecology)",
     desc: "Holistic women's healthcare — from regular gynecology consults to pregnancy and postnatal care.",
-    points: ["Pregnancy care", "Gynec consultations", "Menstrual health", "Postnatal support"],
+    points: [
+      "Pregnancy care",
+      "Gynec consultations",
+      "Menstrual health",
+      "Postnatal support",
+    ],
   },
 ];
 
-function ServicesPage() {
+export default function ServicesPage() {
   const { open } = useBooking();
   return (
     <>

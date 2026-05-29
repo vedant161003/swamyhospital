@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,19 +8,7 @@ import { toast } from "sonner";
 import { submitBooking } from "@/lib/submitBooking";
 import { HOSPITAL_INFO } from "@/config/integrations";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact Us — Swamy Hospitals" },
-      { name: "description", content: "Get in touch with Swamy Hospitals, Electronic City, Bangalore." },
-      { property: "og:title", content: "Contact Swamy Hospitals" },
-      { property: "og:description", content: "Reach out for appointments and queries." },
-    ],
-  }),
-  component: ContactPage,
-});
-
-function ContactPage() {
+export default function ContactPage() {
   const [form, setForm] = useState({ name: "", phone: "", email: "", message: "" });
   const [sending, setSending] = useState(false);
 
