@@ -39,7 +39,7 @@ export default function Home() {
               Your Health, <span className="text-primary">Our Priority</span>
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Compassionate, expert care from Swamy Hospitals — a trusted nursing home, clinic, and medical center serving Electronic City and beyond.
+              Compassionate, expert care from Swamy Hospitals — a trusted medical care hospital, and medical center serving Electronic City and beyond.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button variant="cta" size="lg" onClick={open}>
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { icon: Award, title: "Best in Electronic City", desc: "Recognized as a leading hospital in Electronic City, Bangalore." },
-              { icon: Stethoscope, title: "Nursing Home + Clinic", desc: "Complete nursing home, clinic, and medical services under one roof." },
+              { icon: Stethoscope, title: "Medical care Hospital", desc: "Medical care Hospital, and medical services under one roof." },
               { icon: Users, title: "Experienced Doctors", desc: "Highly qualified specialists with years of clinical experience." },
               { icon: ShieldCheck, title: "Trusted Care", desc: "Hygienic facilities and patient-first care you can rely on." },
             ].map((f) => (
@@ -220,7 +220,7 @@ export default function Home() {
           <div>
             <h2 className="text-3xl font-bold sm:text-4xl">About Swamy Hospitals</h2>
             <p className="mt-4 text-muted-foreground">
-              Swamy Hospitals is a trusted nursing home, clinic, and medical center in Electronic City, Bangalore. We combine experienced doctors, modern facilities, and a patient-first approach to deliver the highest standard of care.
+              Swamy Hospitals is a trusted medical care hospital, and medical center in Electronic City, Bangalore. We combine experienced doctors, modern facilities, and a patient-first approach to deliver the highest standard of care.
             </p>
             <p className="mt-3 text-muted-foreground">
               From everyday medical needs to specialized treatments, our team is committed to your well-being.

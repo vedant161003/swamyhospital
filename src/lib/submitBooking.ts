@@ -10,10 +10,6 @@ export type BookingPayload = {
   message?: string;
 };
 
-/**
- * Saves a booking to Lovable Cloud (Supabase `bookings` table).
- * View all submissions in the Cloud dashboard under the Database tab.
- */
 export async function submitBooking(payload: BookingPayload) {
   const { error } = await supabase.from("bookings").insert({
     name: payload.name,
@@ -24,8 +20,18 @@ export async function submitBooking(payload: BookingPayload) {
     booking_time: payload.time,
     message: payload.message ?? null,
   });
+
   if (error) {
-    console.error("Booking submission failed:", error);
+    console.error(error);
     throw error;
   }
+
+  // Send emails
+  await fetch("/api/send-booking", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
 }

@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="mx-auto max-w-4xl space-y-6 px-4 text-muted-foreground sm:px-6">
           <p>
-            Swamy Hospitals is a full-service nursing home, clinic, and medical center based in Electronic City, Bangalore. For years, we have been delivering compassionate, high-quality healthcare to families across the region.
+            Swamy Hospitals is a full-service care hospital, and medical center based in Electronic City, Bangalore. For years, we have been delivering compassionate, high-quality healthcare to families across the region.
           </p>
           <p>
             Our team of experienced doctors and dedicated staff combine modern medicine with a personal touch — ensuring every patient receives attentive, individualized care. Whether you visit us for a routine consultation or a specialized treatment, you can expect the same standard of excellence.
