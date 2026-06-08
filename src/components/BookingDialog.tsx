@@ -35,6 +35,7 @@ const SERVICES = [
   "Skin Care / Dermatology / Cosmetology",
   "General Medicine",
   "OBG (Obstetrics & Gynecology)",
+  "Wound Care",
 ];
 
 function getDateOptions() {

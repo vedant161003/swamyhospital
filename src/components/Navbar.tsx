@@ -10,6 +10,7 @@ const services = [
   { label: "Skin Care / Dermatology / Cosmetology", to: "/services" },
   { label: "General Medicine", to: "/services" },
   { label: "OBG (Obstetrics & Gynecology)", to: "/services" },
+  { label: "Wound Care", to: "/services" },
 ];
 
 export function Navbar() {

@@ -101,12 +101,13 @@ export default function Home() {
               View all →
             </Link>
           </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {[
-              { icon: Sparkles, title: "Skin Care / Dermatology / Cosmetology", desc: "Advanced skin treatments, dermatology consultations, and aesthetic care." },
-              { icon: Activity, title: "General Medicine", desc: "Diagnosis and treatment for a wide range of medical conditions." },
-              { icon: Baby, title: "OBG", desc: "Obstetrics and gynecology care for women at every stage of life." },
-            ].map((s) => (
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {[
+  { icon: Sparkles, title: "Skin Care / Dermatology / Cosmetology", desc: "Advanced skin treatments, dermatology consultations, and aesthetic care." },
+  { icon: Activity, title: "General Medicine", desc: "Diagnosis and treatment for a wide range of medical conditions." },
+  { icon: Baby, title: "OBG", desc: "Obstetrics and gynecology care for women at every stage of life." },
+  { icon: Activity, title: "Wound Care – Expert Care for Faster Healing", desc: "Specialized care for diabetic foot ulcers, non-healing wounds, bed sores, surgical wounds, burns, traumatic injuries, and infected wounds." },
+].map((s) => (
               <div key={s.title} className="group rounded-xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-primary hover:shadow-lg">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/15 text-accent">
                   <s.icon className="h-6 w-6" />

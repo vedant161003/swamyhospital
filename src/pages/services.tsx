@@ -36,6 +36,19 @@ const services = [
       "Postnatal support",
     ],
   },
+  {
+    icon: Activity,
+    title: "Wound Care – Expert Care for Faster Healing",
+    desc: "Specialized wound care services focused on faster healing, infection prevention, and improved recovery outcomes.",
+    points: [
+      "Diabetic Foot Ulcers",
+      "Non-Healing Wounds",
+      "Bed Sores (Pressure Ulcers)",
+      "Surgical Wounds",
+      "Burns & Traumatic Injuries",
+      "Infected Wounds",
+    ],
+  },
 ];
 
 export default function ServicesPage() {
@@ -52,7 +65,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-16">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 md:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => (
             <div key={s.title} className="flex flex-col rounded-2xl border border-border bg-card p-7 shadow-sm">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">

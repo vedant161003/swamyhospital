@@ -45,7 +45,7 @@ export const GOOGLE_SHEET_WEBHOOK_URL = "your_google_apps_script_url";
 export const HOSPITAL_INFO = {
   name: "Swamy Hospitals",
   tagline: "Your Health, Our Priority",
-  address: "Swamy Hospitals, Hosur Rd, Konappana Agrahara, Electronic City, Konappana Agrahara, Karnataka 560100",
+  address: "Swamy Hospitals, Konappana Agrahara, Hosur Main Road, Electronic City post, Bengaluru, Karnataka 560100",
   phone: "+91 86601 88867",
   email: HOSPITAL_EMAIL,
   instagram: "@swamyhospitals",
