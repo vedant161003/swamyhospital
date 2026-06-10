@@ -18,7 +18,7 @@ export function Footer() {
         <div>
           <img src={logo} alt="Swamy Hospital" className="h-12 w-auto rounded-md object-contain" />
           <p className="mt-3 text-sm text-muted-foreground">
-            Medical care hospital, and medical center serving Electronic City, Bangalore with trusted, compassionate care.
+          For more than 20 years, Swamy Hospitals has been delivering expert, compassionate, and affordable healthcare to the people of Electronic City and beyond.
           </p>
         </div>
         <div>

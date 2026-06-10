@@ -39,7 +39,7 @@ export default function Home() {
               Your Health, <span className="text-primary">Our Priority</span>
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Compassionate, expert care from Swamy Hospitals — a trusted medical care hospital, and medical center serving Electronic City and beyond.
+            For more than 20 years, Swamy Hospitals has been delivering expert, compassionate, and affordable healthcare to the people of Electronic City and beyond.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button variant="cta" size="lg" onClick={open}>
